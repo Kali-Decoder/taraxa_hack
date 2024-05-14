@@ -1,6 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
-const { PRIVATE_KEY, POLYGON_API_KEY } = process.env;
+const { PRIVATE_KEY, TARAXA_KEY } = process.env;
 module.exports = {
   defaultNetwork: "PolygonMumbai",
   networks: {
@@ -16,21 +16,25 @@ module.exports = {
       url: "https://rpc-mainnet.maticvigil.com",
       accounts: [PRIVATE_KEY],
     },
-    bsc: {
-      url: "https://rpc.ankr.com/bsc",
-      accounts: [PRIVATE_KEY],
-    },
-    ethereum: {
-      url: "https://mainnet.infura.io/v3/",
-      accounts: [PRIVATE_KEY],
-    },
-    arbitrum: {
-      url: "https://arb1.arbitrum.io/rpc",
+    taraxa_testnet: {
+      url: "https://rpc.testnet.taraxa.io/",
       accounts: [PRIVATE_KEY],
     },
   },
   etherscan: {
-    apiKey: POLYGON_API_KEY,
+    apiKey: {
+      taraxa_testnet : TARAXA_KEY
+    },
+    customChains: [
+      {
+        network: "taraxa_testnet",
+        chainId: 842,
+        urls: {
+          apiURL: "https://taraxa-testnet.explorer.caldera.xyz/api",
+          browserURL: "https://taraxa-testnet.explorer.caldera.xyz",
+        },
+      },
+    ],
   },
   solidity: {
     version: "0.8.0",
