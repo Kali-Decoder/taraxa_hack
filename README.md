@@ -23,6 +23,14 @@ Feedback Incentivized will initially target digital platform owners and develope
 ## Impact on Taraxa:
 Feedback Incentivized has the potential to expand Taraxa's token supply by rewarding users with Taraxa tokens for their bug reports. Feedback Incentivized can enhance Taraxa's market reach by attracting new users and developers to the platform, thereby increasing the demand for Taraxa tokens and highlighting Taraxa's innovative technology and community-driven approach.
 
+### Gelato:
+
+![gallery (6)](https://github.com/Kali-Decoder/taraxa_hack/assets/69464744/89665ab7-af22-4d9d-85f5-c8c9562d124d)
+
+Gelato-functions
+
+![gallery (5)](https://github.com/Kali-Decoder/taraxa_hack/assets/69464744/8cc67870-f55c-4585-8013-ae5fb328b221)
+
 ## Deployed Smart Contracts:
 1. Taraxa Feedback Contract Deployment <br/>
 https://testnet.explorer.taraxa.io/address/0xdd0570edb234a1753e5ad3f8be8fa7515cda1c12
